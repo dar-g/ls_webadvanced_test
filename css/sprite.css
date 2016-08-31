@@ -1,0 +1,50 @@
+.sprite {
+    background-image: url(../img/icons/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+#seen + label .sprite-checkbox, 
+#seen-1 + label .sprite-checkbox,
+#seen-2 + label .sprite-checkbox,
+#seen-3 + label .sprite-checkbox,
+#seen-4 + label .sprite-checkbox,
+#seen-5 + label .sprite-checkbox {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: -10px -54px;
+}
+
+#seen:checked + label .sprite-checkbox, 
+#seen-1:checked + label .sprite-checkbox,
+#seen-2:checked + label .sprite-checkbox,
+#seen-3:checked + label .sprite-checkbox,
+#seen-4:checked + label .sprite-checkbox,
+#seen-5:checked + label .sprite-checkbox {
+    background-position: -10px -10px;
+}
+
+#seen, #seen-1, #seen-2, #seen-3, #seen-4, #seen-5 {
+    display: none;
+}
+
+.sprite-clock {
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 14px;
+    background-position: -50px -10px;
+}
+
+.sprite-completed {
+    width: 31px;
+    height: 24px;
+    background-position: -82px -10px;
+    display: inline-block;
+}
